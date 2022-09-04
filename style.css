@@ -3,9 +3,9 @@
 :root {
   --soft-blue: hsl(215, 51%, 70%);
   --cyan: hsl(178, 100%, 50%);
-  --very-dark-blue: hsl(217, 54%, 11%);
-  --very-dark-blue: hsl(216, 50%, 16%);
-  --very-dark-blue: hsl(215, 32%, 27%);
+  --very-dark-blue-bg: hsl(217, 54%, 11%);
+  --very-dark-blue-card: hsl(216, 50%, 16%);
+  --very-dark-blue-line: hsl(215, 32%, 27%);
   --white: hsl(0, 0%, 100%);
 }
 
@@ -21,5 +21,26 @@ body {
 }
 
 main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--very-dark-blue-bg);
+}
+
+.card {
+  width: 21.8rem;
+  padding: 1.33rem;
+  background-color: var(--very-dark-blue-card);
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
 
 }
+
+.card .card__image {
+ 
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
