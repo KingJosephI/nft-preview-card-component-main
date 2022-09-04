@@ -35,12 +35,15 @@ main {
   display: flex;
   flex-direction: column;
   border-radius: 0.5rem;
-
 }
 
 .card .card__image {
   border-radius: 0.5rem;
   width: 100%;
+
+  opacity: 1;
+  display: block;
+  transition: .5s ease;
 }
 
 .card > h1 {
@@ -74,7 +77,6 @@ main {
   color: var(--soft-blue);
   font-size: 0.833rem;
   font-weight: normal;
-  /* background-color: yellow; */
   width: 70px;
 }
 
@@ -83,14 +85,14 @@ main {
   gap: .3rem;
 }
 
-.card__profile{
+.card__profile {
   display: flex;
   gap: .8rem;
   align-items: center;
   padding-top: 0.88rem;
 }
 
-.card__profile > p{
+.card__profile > p {
   color: var(--soft-blue);
 }
 
@@ -103,4 +105,32 @@ main {
   width: 1.83rem;
   border: 1px solid var(--white);
   border-radius: 50%;
+}
+
+.view-container {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: hsla(178, 100%, 50%, 0.3);
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 100%;
+ }
+
+ .card__image-container{
+  position: relative;
+ }
+
+.card__image-container:hover .view-container {
+  opacity: 1;
+  cursor: pointer;
 }
