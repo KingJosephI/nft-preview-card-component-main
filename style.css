@@ -26,6 +26,7 @@ main {
   justify-content: center;
   align-items: center;
   background-color: var(--very-dark-blue-bg);
+  padding: 3rem 1rem;
 }
 
 .card {
