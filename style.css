@@ -39,8 +39,47 @@ main {
 }
 
 .card .card__image {
- 
   border-radius: 0.5rem;
   width: 100%;
 }
 
+.card > h1 {
+  color: var(--white);
+  padding: 1.61rem 0;
+  font-weight: 600;
+  font-size: 1.22rem;
+}
+
+
+.card > p {
+  font-size: 1rem;
+  line-height: 1.73rem;
+  color: var(--soft-blue);
+  font-weight: 300;
+}
+
+
+.pricing {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.11rem 0;
+}
+
+.pricing__current-price {
+  color: var(--cyan);
+  font-weight: 600;
+  font-size: 0.833rem;
+}
+
+.pricing__days-left {
+  color: var(--soft-blue);
+  font-size: 0.833rem;
+  font-weight: normal;
+  /* background-color: yellow; */
+  width: 70px;
+}
+
+.pricing > div {
+  display: flex;
+  gap: .3rem;
+}
