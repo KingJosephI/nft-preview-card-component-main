@@ -50,7 +50,6 @@ main {
   font-size: 1.22rem;
 }
 
-
 .card > p {
   font-size: 1rem;
   line-height: 1.73rem;
@@ -58,11 +57,11 @@ main {
   font-weight: 300;
 }
 
-
 .pricing {
   display: flex;
   justify-content: space-between;
   padding: 1.11rem 0;
+  border-bottom: 1px solid var(--soft-blue);
 }
 
 .pricing__current-price {
@@ -82,4 +81,26 @@ main {
 .pricing > div {
   display: flex;
   gap: .3rem;
+}
+
+.card__profile{
+  display: flex;
+  gap: .8rem;
+  align-items: center;
+  padding-top: 0.88rem;
+}
+
+.card__profile > p{
+  color: var(--soft-blue);
+}
+
+.card__profile strong{
+  color: var(--white);
+  font-weight: normal;
+}
+
+.card__avatar {
+  width: 1.83rem;
+  border: 1px solid var(--white);
+  border-radius: 50%;
 }
